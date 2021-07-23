@@ -27,7 +27,8 @@ class test_HotelBooking(unittest.TestCase):
         hotelsearch.click_on_checkout_date()
         hotelsearch.fill_room_guest_details()
         hotelsearch.click_on_search_button()
-        if
+        print("GitHub command to check")
+        print("GitHub command to check")
 
     @classmethod
     def tearDownClass(cls):

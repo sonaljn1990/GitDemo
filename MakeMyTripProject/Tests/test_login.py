@@ -28,6 +28,7 @@ class test_login(unittest.TestCase):
         login.enter_password(login.password)
         login.click_login_button()
         time.sleep(5)
+        print("GitHub command to check")
         if login.check_user_loggedIn():
             print("test 01 is pass")
             sheet.cell(row=2, column=4).value = 'Pass'
@@ -53,6 +54,7 @@ class test_login(unittest.TestCase):
         login.enter_password(login.password)
         login.click_login_button()
         time.sleep(3)
+        print("GitHub command to check")
         if login.check_invalid_credential_login_msg():
             print("test 02 is pass, user is not able to login with invalid credentials")
             sheet.cell(row=3, column=4).value = 'Pass'

@@ -18,6 +18,7 @@ class test_flightSearch(unittest.TestCase):
         driver = self.driver
         driver.get("https://www.makemytrip.com/")
         time.sleep(3)
+        print("GitHub command to check")
         titleOfTheWebPage = driver.title
         if titleOfTheWebPage == "MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday":
             print("test 03 is pass")
@@ -53,6 +54,9 @@ class test_flightSearch(unittest.TestCase):
         flightSearch.select_travellers_information()
         time.sleep(2)
         flightSearch.perform_search_for_flights()
+        print("GitHub command to check")
+        print("GitHub command to check")
+        print("GitHub command to check")
 
 
     @classmethod
